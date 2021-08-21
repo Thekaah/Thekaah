@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>Calculadora, Desafio 02 / Luciano</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <!-- Display da calculadora -->  
+        <div>
+            <br>    
+            <p id="resultado"></p>
+        </div>
+
+        <!--Os 4 primeiros botões da calculadora-->
+        <tr>
+                <td><button id="7"  onclick="insert('7')" >7</button></td>            
+                <td><button onclick="insert('8')" id="8">8</button></td>
+                <td><button onclick="insert('9')" id="9">9</button></td>
+                <td><button onclick="clean()" id="c">C</button></td>
+        </tr>
+        <br>
+
+        <!--Os 4 botões da segunda linha da calculadora-->
+        <tr>
+                <td><button onclick="insert('4')" id="4">4</button></td>            
+                <td><button onclick="insert('5')" id="5">5</button></td>
+                <td><button onclick="insert('6')" id="6">6</button></td>
+                <td><button onclick="insert('*')" id="X">X</button></td>
+        </tr>
+        <br>
+
+        <!--Os 4 botões da terceira linha da calculadora-->
+        <tr>
+                <td><button onclick="insert('1')" id="1">1</button></td>            
+                <td><button onclick="insert('2')" id="2">2</button></td>
+                <td><button onclick="insert('3')" id="3">3</button></td>
+                <td><button onclick="insert('/')" id="barra">/</button></td>
+        </tr>
+        <br>
+
+        <!--Os 4 botões da quarta linha da calculadora-->
+        <tr>
+                <td><button onclick="insert('0')" id="0">0</button></td>            
+                <td><button onclick="insert('00')" id="00">00</button></td>
+                <td><button onclick="insert('.')" id="ponto">,</button></td>
+                <td><button onclick="calcular()" id="igual">=</button></td>
+        </tr>
+        <br>
+
+        <!--Os 2 botões da quinta linha da calculadora-->
+        <tr>
+            <td><button onclick="insert('+')" id="mais">+</button></td>            
+            <td><button onclick="insert('-')" id="menos">-</button></td> 
+
+        </tr>
+
+        <div class="marca">Calculadora Desafio 02</div>
+
+    </div>
+    <div class="container2">
+        <a target="_blank" href="https://github.com/Thekaah"><i class="fab fa-github"></i></a>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
